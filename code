@@ -1,11 +1,11 @@
 import turtle
 gk = turtle.Turtle()
 gk.screen.bgcolor("black")
-gk.pensize(1)
-gk.color("dark cyan")
+gk.pensize(2)
+gk.color("cyan")
 gk.left(90)
 gk.backward(100)
-gk.speed(300)
+gk.speed(100)
 gk.shape('turtle')
 def tree(i):
     if i < 10:
@@ -14,7 +14,7 @@ def tree(i):
          gk.forward(i)
          gk.color("cyan")
          gk.circle(2)
-         gk.color("brown")
+         gk.color("dark cyan")
          gk.left(30)
          tree(3*i/4)
          gk.right(60)
